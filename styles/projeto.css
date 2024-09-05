@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    background: #f2f2f2;
+    font-family: sans-serif;
+  
+  }
+
+.Conexus{
+    display: flex;
+    justify-content: center;
+    padding: 30 0 0 0px;
+    height: 11%;
+
+    
+}
+
+.siteVideo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    font-size: 20px;
+    align-items: center;
+}
+
+
+video{
+    display: flex;
+    width: 100%;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 0.2px 0.2px 4px rgb(48, 93, 177);
+}
+
+.worldGame,.soundCrake,.Formula1,.Instrumentros,.Luxury {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 3%;
+    width: 40%;
+    height: 600px;
+}
+
+.siteVideo p {
+
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+
+.texClientes{
+    display: flex;
+    position:absolute;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 18%;
+    margin-left: 48%;
+    font-size: 30px;
+}
+
+
+.clientes{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    height: 200px;
+    flex-direction: column;
+
+    
+    
+} 
+
+.clientes h1{
+  text-align: center;
+  font-family: sans-serif;
+  padding-bottom: 2.5%;
+}
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    bottom: 5%; 
+  }
+
+
+
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+    
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  /* .logos:hover .logos-slide {
+    animation-play-state: paused;
+  } */
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 45s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 70px;
+    margin: 0px 100px;
+  }

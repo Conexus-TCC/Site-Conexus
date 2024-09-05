@@ -1,0 +1,141 @@
+
+
+.slogan{
+    background:linear-gradient(90deg,var(--azulEscuro),var(--azulClaro),var(--preto));
+    -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    color: var(--azulClaro);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: var(--preto);
+    overflow-x: hidden;
+}
+
+.pos-video{
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.inicio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.inicio>video{
+    position: fixed;
+    z-index: -999;
+    right: 0%;
+    bottom:  -150%;
+  max-width: 100%;
+   max-height: 500%;
+}
+
+.sobre{
+    padding: 50px 2px;
+    gap:42px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+   flex-wrap: wrap;
+    background-color: var(--branco);
+}
+.titulo-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.titulo-sobre>img{
+    width: 250px;
+}
+.sobre>h2>img{
+    width:30%;
+}
+.coisas>.imagens > .logo {
+    width: 30%;
+}
+.sobre>.coisas{
+    align-items: center;
+        justify-content: space-around;
+    display: flex;
+    height: 100%;
+}
+.Texto {
+    font-size: 20px;
+    text-align: justify;
+    width: 40%;
+}
+.coisas>.imagens > img {
+    width: 60%;
+}
+.areas{
+    padding: 5px;
+    gap:20px;
+    flex-wrap: wrap;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.areas>h1{
+
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.card{
+    border-radius: 20px;
+    transition: 0.5s;
+    -webkit-box-shadow: 9px 6px 0px 3px rgba(0, 10, 99, 0.73);
+     -moz-box-shadow: 9px 6px 0px 3px rgba(0, 10, 99, 0.73);
+     box-shadow: 9px 6px 0px 3px rgba(0, 10, 99, 0.73);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 340px;
+    width: 230px;
+}
+.card>img{
+    width: 80%;
+}
+.card>h2{
+font-size: 1.3em;
+}
+.card>p{
+    text-align: justify;
+    padding: 15px;
+    color: var(--branco);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    bottom: 0;
+}
+.card:hover{
+    cursor: pointer;
+    background-color: var(--azulEscuro);
+    -webkit-box-shadow: 9px 6px 0px 3px rgba(0, 10, 99, 0);
+        -moz-box-shadow: 9px 6px 0px 3px rgba(0, 10, 99, 0);
+        box-shadow: 9px 6px 0px 3px rgba(0, 10, 99, 0);
+    p{
+       opacity: 1;
+        bottom: 30%;
+    }
+    h2,h1,img{
+        opacity: 0;
+    }
+}
+
