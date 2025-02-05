@@ -1,6 +1,7 @@
 #cadastro{
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 #formIcon>li{
@@ -35,7 +36,7 @@ width: 60%;
     color: #776BA0;
     width: 80%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 5%;  
 }
 
 #contCad>div>a>button{

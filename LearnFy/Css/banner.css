@@ -6,22 +6,24 @@
 }
 
 #imgBanner>img{
-    width: 84%;
+    width: 70%;
 
 }
 
 #banner>div{
     width: 50%;
     margin-left: 2%;
+    margin-bottom: 20%;
 }
 
 #banner>#texto{
     align-self: center;
+    margin-top: 13%;
 }
 
 #banner>#texto>h1{
     width: 60%;
-    font-size: 50px;
+    font-size: 60px;
     color: #776BA0;
     margin-left: 8%;
     z-index: 100;
