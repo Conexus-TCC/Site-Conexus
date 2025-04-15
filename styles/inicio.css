@@ -13,6 +13,240 @@ html{
 body{
     color: var(--preto);
     overflow-x: hidden;
+}      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Estilos para a Seção Sobre */
+.sobre-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #ffffff, #f0f4ff);
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.sobre-title {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sobre-title h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.sobre-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3de4, #00c6ff);
+    border-radius: 2px;
+}
+
+.conexus-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.infinity-logo {
+    width: 200px;
+    transition: transform 0.5s ease;
+}
+
+.infinity-logo:hover {
+    transform: scale(1.05);
+}
+
+.text-logo {
+    width: 250px;
+    transition: opacity 0.3s ease;
+}
+
+.sobre-text {
+    max-width: 900px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 20px rgba(0, 0, 150, 0.1);
+    text-align: justify;
+    position: relative;
+    transition: transform 0.3s ease;
+    border-left: 5px solid #0042ff;
+}
+
+.sobre-text:hover {
+    transform: translateY(-5px);
+}
+
+.sobre-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Estilos para a Seção Áreas de Atuação */
+.areas-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.areas-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, #f0f4ff, transparent);
+}
+
+.areas-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.areas-title h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.areas-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3de4, #00c6ff);
+    border-radius: 2px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.service-card {
+    width: 250px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 150, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e6e8f0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #0042ff, #00c6ff);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 150, 0.15);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    fill: #0042ff;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-title {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-content, .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .infinity-logo, .text-logo {
+        width: 150px;
+    }
+    
+    .service-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .sobre-text p {
+        font-size: 1rem;
+    }
+    
+    .sobre-title h2, .areas-title h2 {
+        font-size: 2rem;
+    }
 }
 
 .pos-video{
