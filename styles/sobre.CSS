@@ -200,6 +200,7 @@ clip-path: circle(29.6% at 96% 47%);
 
     flex-direction: column;  
     width: 600px;
+    margin-right: 50px;
   
 }
 
@@ -243,6 +244,7 @@ clip-path: circle(29.6% at 96% 47%);
     width: 550px;
     height: 450px;
     color: var(--preto);
+    margin-left: 50px;
 }
 
 .textovisao h1 {
@@ -273,7 +275,8 @@ clip-path: circle(29.6% at 96% 47%);
 
     font-size: 4rem;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-bottom: 30px;
     color: #333;
     font-weight: bold;
     letter-spacing: 1px;

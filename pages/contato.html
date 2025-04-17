@@ -14,6 +14,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../media/imgs/inicio/logo.png" type="image/png">
     <script src="https://kit.fontawesome.com/6503890d8a.js" crossorigin="anonymous"></script>
+    <style>
+    about-nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-link {
+    color: #1e3de4;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-header {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+.header-underline {
+    width: 80px;
+    height: 4px;
+    margin: 20px auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
+
+.quem-somos-section, .visao-section {
+    background-color: #fff;
+}
+
+.missao-section, .valores-section {
+    background-color: #f8f9fa;
+}
+
+.content-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.content-text p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.valor-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    transition: transform 0.3s ease;
+    border-top-width: 4px;
+    border-top-style: solid;
+}
+
+.valor-card:hover {
+    transform: translateY(-5px);
+}
+
+.valor-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-header {
+        padding: 50px 0;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .about-header h1 {
+        font-size: 36px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+}
+
+.contato-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1e3de4;
+}
+
+.submit-btn {
+    background-color: #1e3de4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1a35c2;
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+    </style>
 </head>
 <body>
 <header>
@@ -25,24 +226,30 @@
         <ul data-selecionado="true" ><a href="contato.html">Contato</a></ul>
     </nav>
 </header>
-    <main>
-        <div class="topo">
-            <div class="imagem">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376l0 103.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"/></svg>
-            </div>
-            <h1>Entre em contato</h1>
+<section class="contato-section">
+    <div class="container">
+        <h2>Entre em contato</h2>
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Nos faça uma proposta</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </div>
+            </form>
         </div>
-        
-        <form action="">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome"  id="nome">
-            <label for="email">E-Mail</label>
-            <input type="email" name="email"  id="email">
-            <label for="msg">nos faça uma proposta</label>
-            <textarea name="msg"  id="" cols="30" rows="8"></textarea>
-            <input type="submit">
-        </form>
-    </main>
+    </div>
+</section>
     <footer>
         <div class="imagens">
             <img class="logo" src="../media/imgs/inicio/logo.png" alt="">
