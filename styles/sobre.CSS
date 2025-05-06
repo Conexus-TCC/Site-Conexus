@@ -164,7 +164,6 @@ clip-path: circle(29.6% at 96% 47%);
 
 .missao,.visao{
     display: flex;
-    
     align-items: center;
     width: 100%;
     height: 650px;
